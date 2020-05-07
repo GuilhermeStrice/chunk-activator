@@ -1,0 +1,31 @@
+{
+    "schemaVersion": 1,
+    "id": "chunkactivator",
+    "version": "%VERSION%",
+    "name": "Chunk Activator",
+    "description": "Keep chunks loaded even when you're away.",
+    "authors": [
+        "sargunv"
+    ],
+    "contact": {
+        "homepage": "https://minecraft.curseforge.com/projects/chunk-activator",
+        "sources": "https://gitlab.com/sargunv-mc-mods/chunk-activator",
+        "issues": "https://gitlab.com/sargunv-mc-mods/chunk-activator/issues"
+    },
+    "license": "Apache-2.0",
+    "icon": "assets/chunkactivator/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "me.sargunvohra.mcmods.chunkactivator.ChunkActivator"
+        ]
+    },
+    "mixins": [
+        "chunkactivator.mixins.json"
+    ],
+    "depends": {
+        "minecraft": "1.15.x",
+        "fabricloader": ">=0.8.0",
+        "fabric": ">=0.5.0"
+    }
+}

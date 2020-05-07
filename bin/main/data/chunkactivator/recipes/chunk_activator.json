@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NSN",
+        "SGS",
+        "NSN"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:nether_wart_block"
+        },
+        "S": {
+            "item": "minecraft:soul_sand"
+        },
+        "G": {
+            "item": "minecraft:gold_block"
+        }
+    },
+    "result": {
+        "item": "chunkactivator:chunk_activator"
+    }
+}

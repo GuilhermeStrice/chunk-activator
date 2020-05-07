@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "chunkactivator:block/chunk_activator" }
+    }
+}
