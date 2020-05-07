@@ -1,6 +1,6 @@
 package me.sargunvohra.mcmods.chunkactivator.mixin;
 
-import me.sargunvohra.mcmods.chunkactivator.block.ChunkActivatorBlockEntity;
+import me.sargunvohra.mcmods.chunkactivator.block.ChunkActivatorBlock;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,6 +12,6 @@ public class MixinMinecraftServer {
 
     @Inject(method = "run", at = @At("HEAD"))
     private void onRun(CallbackInfo ci) {
-        ChunkActivatorBlockEntity.refCount.clear();
+        ChunkActivatorBlock.refCount.clear();
     }
 }
